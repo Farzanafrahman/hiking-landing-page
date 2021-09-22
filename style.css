@@ -74,6 +74,10 @@ header .account a:hover {
   color: #FBD784;
 }
 
+header .account .menu-icon {
+  display: none;
+}
+
 section {
   display: flex;
   align-items: center;
@@ -351,4 +355,105 @@ footer .footer-content p.copyright {
   text-align: left;
   line-height: 28px;
   font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    max-width: 560px;
+    padding: 0;
+  }
+
+  section {
+    max-width: 560px;
+    min-height: 60vh;
+    padding: 0 14px 60px;
+  }
+
+  section .header-content {
+    max-width: 70%;
+    margin: 0;
+  }
+
+  section .header-content h5 {
+    margin: 10px 10px;
+    font-size: 40px;
+  }
+
+  .hiker-level,
+  .hiking-gear, 
+  .map-timing {
+    max-width: 560px;
+    margin: 0 auto 40px;
+  }
+
+  .hiker-level .content,
+  .hiking-gear .content,
+  .map-timing .content {
+    width: 60%;
+    padding: 20px 30px;
+  }
+
+  .hiker-level .content:before,
+  .hiking-gear .content:before,
+  .map-timing .content:before {
+    left: 10px;
+    top: 0;
+    font-size: 58px;
+  }
+
+  .hiker-level .content h1,
+  .hiking-gear .content h1,
+  .map-timing .content h1 {
+    font-size: 32px;
+    margin: 4px 0;
+  }
+
+  footer .footer-section {
+    max-width: 560px;
+    padding: 20px;
+  }  
+
+  .footer-listing {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 557px) {
+  .mobile-only {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 556px) {
+  header {
+    max-width: 480px;
+    padding: 0;
+  }
+
+  header .logo {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  /* header .menu ul {
+    position: absolute;
+    right: -200px;
+  } */
+
+  header .account {
+    display: none;
+  }
+
+  /* header .account .account-icon, 
+  header .account a {
+    position: absolute;
+    right: -200px;
+  } */
+
+  header .account .menu-icon {
+    display: flex;
+    height: 30px;
+  }
+
 }
