@@ -1,0 +1,490 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #354147 url("./img/background-img.png") no-repeat;
+  background-position: top center;
+  background-size: cover;
+  opacity: 1;
+  font-family: 'Chronicle Display Semibold';
+  color: #fff;
+}
+
+main.landing-page .bg-gradient {
+  background: linear-gradient(330.24deg, rgba(11, 29, 38, 0) 31.06%,
+   #0B1D26 108.93%);
+}
+
+ul {
+  list-style-type: none;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+header .logo {
+  font-size: 26px;
+}
+
+header .menu ul {
+  display: flex;
+  padding: 0;
+}
+
+header .menu ul li a {
+  padding: 0 10px;
+  font-family: 'Gilroy';
+  font-weight: normal;
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+}
+
+header .menu ul li a:hover {
+  color: #FBD784;
+  transition: ease-in 3ms;
+}
+
+header .account {
+  display: flex;
+  align-items: center;
+  font-family: 'Gilroy';
+  font-weight: bonormalld;
+  font-size: 14px;
+}
+
+header .account img.account-icon {
+  margin-right: 5px;  
+  height: 15px;
+  width: 15px;
+}
+
+header .account a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header .account a:hover {
+  color: #FBD784;
+}
+
+/* header .account .menu-icon {
+  display: none;
+} */
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1280px;
+  min-height: 80vh;
+  margin: 0 auto;
+  padding: 0 40px 80px;
+}
+
+section .social {
+  position: relative;
+}
+
+section .social p {
+  margin: 0;
+  text-align: left;
+  transform: rotate(90deg) translate(-50%, 0);
+  position: absolute;
+  left: 0;
+  transform-origin: bottom left;
+  white-space: nowrap;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Gilroy';
+  font-size: 12px;
+}
+
+section .social p img.social-icon {
+  vertical-align: bottom;
+  height: 12px;
+  width: 12px;
+  padding-left: 10px;
+}
+
+section .header-content {
+  max-width: 50%;
+  margin: 0;
+  align-items: center;
+}
+section .header-content p span {
+  font-family: 'Gilroy';
+  font-weight: bolder;
+  font-size: 10px;
+  color: #FBD784;
+  text-transform: uppercase;
+  word-spacing: 4px;
+  letter-spacing: 3px;
+  margin: 4px 0;
+  position: relative;
+  padding-left: 80px;
+}
+
+section .header-content p span:before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 60px;
+  background-color: #FBD784;
+  left: 0;
+  top: calc(50% - 2px);
+  
+}
+
+section .header-content h5 {
+  margin: 10px 0;
+  font-size: 52px;
+}
+
+section .header-content p {
+  align-items: center;
+}
+
+section .header-content p.scroll {
+  font-family: 'Gilroy';
+  font-size: 10px;
+} 
+
+section .header-content p img.arrow-icon {
+  max-height: 14px;
+  padding-left: 8px;
+  vertical-align: middle;
+}
+
+section .pagination {
+  font-family: 'Gilroy';
+  font-size: 10px;
+}
+
+section .pagination ul {
+  margin: 0;
+  padding: 0;
+}
+
+section .pagination ul li {
+  text-align: right;
+  border-right: 2px solid rgba(255, 255, 255, 0.5);
+  padding: 5px 15px;
+}
+
+section .pagination ul li.active {
+  border-right: 2px solid rgba(255, 255, 255, 1);
+}
+
+.hiker-level,
+.hiking-gear, 
+.map-timing {
+  display: flex;
+  width: 80%;
+  max-width: 1280px;
+  margin: 0 auto 80px;
+}
+
+.hiker-level .content,
+.hiking-gear .content,
+.map-timing .content {
+  width: 60%;
+  padding: 60px 170px;
+  position: relative;
+}
+
+.hiker-level .content:before,
+.hiking-gear .content:before,
+.map-timing .content:before {
+  font-family: 'Gilroy';
+  font-weight: bold;
+  position: absolute;
+  left: 90px;
+  top: 5px;
+  font-size: 110px;
+  color: #fff;
+  opacity: 0.5;
+}
+
+.hiker-level .content:before {
+  content: '01';
+}
+.hiking-gear .content:before {
+  content: '02';
+}
+.map-timing .content:before {
+  content: '03';
+}
+
+.hiker-level .content p,
+.hiking-gear .content p,
+.map-timing .content p {
+  margin: 0;
+}
+
+.hiker-level .content p span,
+.hiking-gear .content p span,
+.map-timing .content p span {
+  font-family: 'Gilroy';
+  font-weight: bold;
+  font-size: 10px;
+  color: #FBD784;
+  text-transform: uppercase;
+  word-spacing: 4px;
+  letter-spacing: 4px;
+  margin: 4px 0;
+  position: relative;
+  padding-left: 70px;
+}
+
+.hiker-level .content p span:before,
+.hiking-gear .content p span:before,
+.map-timing .content p span:before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 50px;
+  background-color: #FBD784;
+  left: 0;
+  top: calc(50% - 2px);
+}
+
+.hiker-level .content h1,
+.hiking-gear .content h1,
+.map-timing .content h1 {
+  font-size: 48px;
+  margin: 10px 0;
+}
+
+.hiker-level .content .sub-content,
+.hiking-gear .content .sub-content,
+.map-timing .content .sub-content {
+  font-family: 'Gilroy';
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.hiker-level .content p.read,
+.hiking-gear .content p.read,
+.map-timing .content p.read {
+  font-size: 14px;
+  line-height: 70px;
+  color: #FBD784;
+}
+
+.hiker-level .content p.read img,
+.hiking-gear .content p.read img,
+.map-timing .content p.read img {
+  width: 15px;
+  padding-left: 8px;
+  vertical-align: middle;
+}
+
+.side-image-1,
+.side-image-2,
+.side-image-3 {
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  min-width: 30%;
+}
+
+.side-image-1 {
+  background-image: url("./img/cycling.png");
+}
+
+.side-image-2 {
+  background-image: url("./img/hiking.png");
+}
+
+.side-image-3 {
+  background-image: url("./img/timing.png");
+}
+
+footer .footer-section {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 40px 100px;
+}
+
+footer .footer-content {
+  position: relative;
+}
+
+footer .footer-content p.footer-subcontent {
+  max-width: 60%;
+  font-family: 'Gilroy';
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 22px;
+}
+
+footer .footer-content p.copyright {
+  position: absolute;
+  bottom: 0;
+  font-size: 10px;
+  color:rgba(255, 255, 255, 0.5);
+}
+
+.footer-listing {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  font-family: 'Gilroy';
+  font-size: 14px;
+}
+
+.footer-listing p {
+  color: #FBD784;
+  line-height: 28px;
+}
+
+.footer-listing ul {
+  padding-left: 0;
+  text-align: left;
+  line-height: 28px;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    max-width: 560px;
+    padding: 0;
+  }
+
+  section {
+    max-width: 560px;
+    min-height: 60vh;
+    padding: 0 14px 60px;
+  }
+
+  section .header-content {
+    max-width: 70%;
+    margin: 0;
+  }
+
+  section .header-content h5 {
+    margin: 10px 10px;
+    font-size: 40px;
+  }
+
+  .hiker-level,
+  .hiking-gear, 
+  .map-timing {
+    max-width: 560px;
+    margin: 0 auto 40px;
+  }
+
+  .hiker-level .content,
+  .hiking-gear .content,
+  .map-timing .content {
+    width: 60%;
+    padding: 20px 30px;
+  }
+
+  .hiker-level .content:before,
+  .hiking-gear .content:before,
+  .map-timing .content:before {
+    left: 10px;
+    top: 0;
+    font-size: 58px;
+  }
+
+  .hiker-level .content h1,
+  .hiking-gear .content h1,
+  .map-timing .content h1 {
+    font-size: 32px;
+    margin: 4px 0;
+  }
+
+  footer .footer-section {
+    max-width: 560px;
+    padding: 20px;
+  }  
+
+  .footer-listing {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 557px) {
+  .mobile-only {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 556px) {
+  header {
+    max-width: 480px;
+    padding: 0;
+  }
+
+  header .logo {
+    width: 100%;
+    padding-top: 20px;
+    font-size: 16px;
+  }
+
+  header .menu ul {
+    position: absolute;
+    right: -200px;
+    display: block;
+    padding: 15px;
+  }
+
+  header .menu ul li a {
+    padding: 16px;
+  }
+
+  header .account .account-icon,
+  header .account a {
+    display: none;
+  }
+
+  header .account .hamburger-icon {
+    position: relative;
+    content: '';
+    height: 4px;
+    width: 24px;
+    background-color: #000;
+  }
+
+  header .account .hamburger-icon:before,
+  header .account .hamburger-icon:after
+   {
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 24px;
+    background-color: #000;
+  }
+
+  header .account .hamburger-icon:before {
+    top: -10px;
+  }
+
+  header .account .hamburger-icon:after {
+    top: auto;
+    bottom: -10px;
+  }
+
+  section {
+    max-width: 480px;
+    min-height: 40vh;
+    padding: 0 14px 60px;
+  }
+  
+
+}
